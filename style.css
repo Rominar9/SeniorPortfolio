@@ -13,13 +13,16 @@
   --white: #ffffff;
   --accent-purple: #a56eff;
   --deep-purple: #4b0082;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-body);
   background-color: var(--dark-gray);
   color: var(--white);
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 1.1rem; /* slightly bigger for readability */
 }
 
 /* Header */
@@ -38,9 +41,11 @@ header .container {
 }
 
 header h1 {
-  font-size: 1.8rem;
-  color: var(--white);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--accent-purple);
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 nav ul {
@@ -53,11 +58,14 @@ nav a {
   color: var(--white);
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 nav a:hover {
   color: var(--accent-purple);
+  transform: scale(1.05);
 }
 
 /* Hero Section */
@@ -77,11 +85,15 @@ nav a:hover {
 }
 
 #hero h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
 }
 
 #hero p {
   color: #d3d3d3;
+  font-size: 1.2rem;
+  font-family: var(--font-body);
 }
 
 /* Content Sections */
@@ -98,6 +110,15 @@ nav a:hover {
   color: var(--accent-purple);
   border-bottom: 2px solid var(--accent-purple);
   display: inline-block;
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+}
+
+/* Paragraph Styling */
+.content-section p {
+  font-size: 1.2rem;
+  font-family: var(--font-body);
   margin-bottom: 1rem;
 }
 
@@ -118,6 +139,7 @@ nav a:hover {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  font-family: var(--font-heading);
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -137,17 +159,20 @@ nav a:hover {
 
 .cfu-section h3 {
   color: var(--accent-purple);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
 }
 
 /* Video Sections */
 .video-section {
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 video {
-  width: 60%;
+  width: 100%;
+  max-width: 500px; /* smaller, website-friendly size */
   border-radius: 10px;
-  margin-bottom: 1rem;
   border: 3px solid var(--accent-purple);
 }
 
@@ -165,6 +190,7 @@ video {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  font-family: var(--font-heading);
   transition: all 0.3s ease;
 }
 
@@ -180,4 +206,16 @@ footer {
   background: var(--mid-gray);
   padding: 1.2rem;
   font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--accent-purple);
+  font-family: var(--font-heading);
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
 }
