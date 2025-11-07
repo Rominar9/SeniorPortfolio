@@ -5,7 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Senior Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-      <link href="favicon.png" rel="icon" type="favicon">
+  <link href="favicon.png" rel="icon" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Inline styles for fonts and video size adjustments */
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    #hero h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.2rem;
+    }
+
+    #hero p, .content-section p {
+      font-size: 1.1rem;
+    }
+
+    .video-section video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      border: 3px solid #a56eff;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #a56eff;
+      color: #fff;
+      padding: 0.7rem 1.3rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .project-link:hover {
+      background-color: #fff;
+      color: #4b0082;
+      transform: scale(1.05);
+    }
+
+    .cfu-nav button {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -39,7 +86,6 @@
 
   <section id="cfus" class="content-section">
     <h2>CFUs</h2>
-
     <div class="cfu-nav">
       <button onclick="scrollToCfu('cfu1')">CFU 1</button>
       <button onclick="scrollToCfu('cfu2')">CFU 2</button>
@@ -71,12 +117,11 @@
         Your browser does not support the video tag.
       </video>
       <p>
-        In Lab 3, I created a simple obstacle course game in Unity.
-        This mini project was designed to help us learn the basic 
-        tools and features of Unity, including creating environments, 
-        placing obstacles, and moving a character through the course.
+        In Lab 3, I created a simple obstacle course game in Unity. 
+        This mini project was designed to help us learn the basic tools 
+        and features of Unity, including creating environments, placing obstacles, 
+        and moving a character through the course.
       </p>
-    
     </div>
   </section>
 
