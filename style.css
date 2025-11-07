@@ -5,29 +5,28 @@
   box-sizing: border-box;
 }
 
-/* Light Gray + Purple Theme */
+/* Professional Gray & Purple Theme */
 :root {
-  --light-bg: #e8e8e8;        /* Page background */
-  --mid-gray: #f5f5f5;        /* Section/card background */
-  --text-dark: #2a2a2a;       /* Main text color */
-  --accent-purple: #7b3ef3;   /* Purple accent color */
-  --deep-purple: #4b0082;     /* Deep purple for contrast */
+  --dark-gray: #1e1e1e;
+  --mid-gray: #2a2a2a;
+  --light-gray: #3a3a3a;
   --white: #ffffff;
+  --accent-purple: #a56eff;
+  --deep-purple: #4b0082;
 }
 
-/* Body */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--light-bg);
-  color: var(--text-dark);
+  background-color: var(--dark-gray);
+  color: var(--white);
   line-height: 1.6;
 }
 
 /* Header */
 header {
-  background: var(--deep-purple);
+  background: var(--mid-gray);
   padding: 1rem 0;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 header .container {
@@ -64,4 +63,121 @@ nav a:hover {
 /* Hero Section */
 #hero {
   text-align: center;
-  padding: 3
+  padding: 3rem 1rem;
+  background-color: var(--light-gray);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--white);
+  margin-bottom: 1rem;
+}
+
+#hero h2 {
+  font-size: 2rem;
+}
+
+#hero p {
+  color: #d3d3d3;
+}
+
+/* Content Sections */
+.content-section {
+  width: 85%;
+  margin: 2rem auto;
+  background-color: var(--mid-gray);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.content-section h2 {
+  color: var(--accent-purple);
+  border-bottom: 2px solid var(--accent-purple);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* CFU Navigation */
+.cfu-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cfu-nav button {
+  background-color: var(--accent-purple);
+  color: var(--white);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cfu-nav button:hover {
+  background-color: var(--white);
+  color: var(--deep-purple);
+  transform: translateY(-2px);
+}
+
+/* CFU Sections */
+.cfu-section {
+  background-color: var(--light-gray);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.cfu-section h3 {
+  color: var(--accent-purple);
+}
+
+/* Video Sections */
+.video-section {
+  text-align: center;
+}
+
+video {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 3px solid var(--accent-purple);
+}
+
+/* Portfolio Buttons */
+.portfolio-links {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent-purple);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  margin: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--white);
+  color: var(--deep-purple);
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: var(--mid-gray);
+  padding: 1.2rem;
+  font-size: 0.9rem;
+}
