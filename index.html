@@ -1,78 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Senior Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senior Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Senior Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#labs">Labs</a></li>
-                <li><a href="#app">Congressional App Project</a></li>
-                <li><a href="#goals">Goals</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <img src="your-photo.jpg" alt="Your Photo" class="profile-pic">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Explore my projects, achievements, and future goals.</p>
-    </section>
-
-    <section id="about" class="content-section">
-        <h2>About Me</h2>
-        <p>Hello! My name is Romina Rambarran, and I’m a senior passionate about technology, programming, and innovation. I love solving real-world problems with creative coding solutions and collaborating on impactful projects.</p>
-    </section>
-      
-    <section id="labs" class="content-section">
-        <h2>CFU'S(Unity)</h2>
-        <p>Here are some of my CFUs:</p>
-        <ul class="project-list">
-            <li><a href="lab3.html" target="_blank">Lab 3 – [Title]</a></li>
-            <li><a href="lab3.html" target="_blank">Lab 3 – [Title]</a></li>
-            <li><a href="lab3.html" target="_blank">Lab 3 – [Title]</a></li>
-            <li><a href="lab3.html" target="_blank">Lab 3 – [Title]</a></li>
-            <li><a href="lab3.html" target="_blank">Lab 3 – [Title]</a></li>
-            <li><a href="lab3.html" target="_blank">Lab 3 – [Title]</a></li>
-            <li><a href="lab3.html" target="_blank">Lab 3 – [Title]</a></li>
-            <li><a href="lab3.html" target="_blank">Lab 3 – [Title]</a></li>
-            <li><a href="lab3.html" target="_blank">Lab 3 – [Title]</a></li>
+  <header>
+    <div class="container">
+      <h1>Senior Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#cfus">CFUs</a></li>
+          <li><a href="#lab3">Lab 3</a></li>
+          <li><a href="#congressional-app">Congressional App</a></li>
+          <li><a href="#goals">Goals</a></li>
         </ul>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <section id="labs" class="content-section">
-        <h2>Labs(Unity)</h2>
-        <p>Here are some of my lab projects:</p>
-        <ul class="project-list">
-            <li><a href="lab3.html" target="_blank">Lab 3 – [Title]</a></li>
-        </ul>
-    </section>
+  <section id="hero">
+    <img src="your-image.jpg" alt="Profile Picture" class="profile-pic" />
+    <h2>Welcome to My Portfolio</h2>
+    <p>Explore my work, projects, and achievements below.</p>
+  </section>
 
-    <section id="app" class="content-section">
-        <h2>Congressional App Project</h2>
-        <p>This section showcases my entry for the Congressional App Challenge, an app that [description].</p>
-        <a href="app-project.html" class="btn" target="_blank">View Project</a>
-    </section>
+  <section id="about" class="content-section">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is [Your Name], and I’m a passionate senior student interested in technology, coding, and innovation. 
+      I enjoy solving problems, learning new skills, and creating meaningful digital projects.
+    </p>
+  </section>
 
-    <section id="goals" class="content-section">
-        <h2>Goals</h2>
-        <p>My short term and long term goals as I continue growing in technology and leadership:</p>
-        <ul class="goal-list">
-            <li><strong>Complete My Senior Year</strong> — with strong academic performance and impactful projects.</li>
-            <li><strong>Expand My Coding Skills</strong> — by learning new languages and frameworks like Python, JavaScript, and React.</li>
-            <li><strong>Develop Real World Projects</strong> — that help my community or solve practical problems.</li>
-            <li><strong>Pursue a Career in Tech</strong> — focusing on software engineering, AI, or cybersecurity.</li>
-        </ul>
-    </section>
+  <section id="cfus" class="content-section">
+    <h2>CFUs</h2>
 
-    <footer>
-        <p>© 2025 Senior Portfolio</p>
-    </footer>
+    <div class="cfu-nav">
+      <button onclick="scrollToCfu('cfu1')">CFU 1</button>
+      <button onclick="scrollToCfu('cfu2')">CFU 2</button>
+      <button onclick="scrollToCfu('cfu3')">CFU 3</button>
+      <button onclick="scrollToCfu('cfu4')">CFU 4</button>
+      <button onclick="scrollToCfu('cfu5')">CFU 5</button>
+      <button onclick="scrollToCfu('cfu6')">CFU 6</button>
+      <button onclick="scrollToCfu('cfu7')">CFU 7</button>
+      <button onclick="scrollToCfu('cfu8')">CFU 8</button>
+      <button onclick="scrollToCfu('cfu9')">CFU 9</button>
+    </div>
+
+    <div class="cfu-section" id="cfu1"><h3>CFU 1</h3><p>Description or summary of CFU 1...</p></div>
+    <div class="cfu-section" id="cfu2"><h3>CFU 2</h3><p>Description or summary of CFU 2...</p></div>
+    <div class="cfu-section" id="cfu3"><h3>CFU 3</h3><p>Description or summary of CFU 3...</p></div>
+    <div class="cfu-section" id="cfu4"><h3>CFU 4</h3><p>Description or summary of CFU 4...</p></div>
+    <div class="cfu-section" id="cfu5"><h3>CFU 5</h3><p>Description or summary of CFU 5...</p></div>
+    <div class="cfu-section" id="cfu6"><h3>CFU 6</h3><p>Description or summary of CFU 6...</p></div>
+    <div class="cfu-section" id="cfu7"><h3>CFU 7</h3><p>Description or summary of CFU 7...</p></div>
+    <div class="cfu-section" id="cfu8"><h3>CFU 8</h3><p>Description or summary of CFU 8...</p></div>
+    <div class="cfu-section" id="cfu9"><h3>CFU 9</h3><p>Description or summary of CFU 9...</p></div>
+  </section>
+
+  <section id="lab3" class="content-section">
+    <h2>Lab 3</h2>
+    <div class="video-section">
+      <video controls>
+        <source src="lab3-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        This lab focused on applying programming logic to create an interactive
+        solution. It allowed me to explore new coding techniques and problem-solving strategies.
+      </p>
+    </div>
+  </section>
+
+  <section id="congressional-app" class="content-section">
+    <h2>Congressional App</h2>
+    <div class="video-section">
+      <video controls>
+        <source src="congressional-app.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        For the Congressional App Challenge, I developed an app that solves a
+        real-world issue using innovative design and coding. It reflects my ability to combine creativity with technology.
+      </p>
+    </div>
+  </section>
+
+  <section id="goals" class="content-section">
+    <h2>Goals</h2>
+    <ul>
+      <li>Graduate with honors and strong technical experience.</li>
+      <li>Develop impactful software that benefits my community.</li>
+      <li>Continue growing my skills in coding and design.</li>
+    </ul>
+  </section>
+
+  <section id="portfolios" class="content-section portfolio-links">
+    <h2>Portfolio Links</h2>
+    <a href="sophomore-portfolio.html" class="btn">Sophomore Portfolio</a>
+    <a href="junior-portfolio.html" class="btn">Junior Portfolio</a>
+  </section>
+
+  <footer>
+    <p>© 2025 [Your Name] | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function scrollToCfu(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
 </body>
 </html>
