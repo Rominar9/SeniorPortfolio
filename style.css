@@ -1,33 +1,20 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fonts & Colors */
-:root {
-  --dark-gray: #1e1e1e;
-  --mid-gray: #2a2a2a;
-  --light-gray: #3a3a3a;
-  --white: #ffffff;
-  --accent-purple: #a56eff;
-  --deep-purple: #4b0082;
-}
-
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: var(--dark-gray);
-  color: var(--white);
+  background-color: #1e1e1e;
+  color: #ffffff;
   line-height: 1.8;
   font-size: 18px;
 }
 
-/* Header */
 header {
-  background: var(--mid-gray);
+  background-color: #2a2a2a;
   padding: 1rem 0;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 header .container {
@@ -40,8 +27,6 @@ header .container {
 
 header h1 {
   font-size: 2rem;
-  color: var(--white);
-  letter-spacing: 1px;
 }
 
 nav ul {
@@ -51,21 +36,19 @@ nav ul {
 }
 
 nav a {
-  color: var(--white);
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: var(--accent-purple);
+  color: #a56eff;
 }
 
-/* Hero Section */
 #hero {
   text-align: center;
   padding: 3rem 1rem;
-  background-color: var(--light-gray);
+  background-color: #3a3a3a;
 }
 
 .profile-pic {
@@ -73,7 +56,7 @@ nav a:hover {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--white);
+  border: 3px solid #ffffff;
   margin-bottom: 1rem;
 }
 
@@ -86,96 +69,74 @@ nav a:hover {
   color: #d3d3d3;
 }
 
-/* Content Sections */
 .content-section {
   width: 85%;
   margin: 2rem auto;
-  background-color: var(--mid-gray);
+  background-color: #2a2a2a;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .content-section h2 {
-  color: var(--accent-purple);
-  border-bottom: 2px solid var(--accent-purple);
+  color: #a56eff;
+  border-bottom: 2px solid #a56eff;
   display: inline-block;
   margin-bottom: 1rem;
 }
 
-/* Paragraphs bigger & readable */
 .content-section p {
   font-size: 1.2rem;
   line-height: 1.8;
 }
 
-/* CFU Navigation */
-.cfu-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+/* CFU Section */
+.cfu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.cfu-nav button {
-  background-color: var(--accent-purple);
-  color: var(--white);
+.cfu-card {
+  background-color: #3a3a3a;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cfu-btn {
+  background-color: #a56eff;
+  color: white;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
-  cursor: pointer;
+  margin-bottom: 1rem;
   font-weight: 600;
-  font-size: 1rem;
-  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: default;
 }
 
-.cfu-nav button:hover {
-  background-color: var(--white);
-  color: var(--deep-purple);
-  transform: translateY(-2px);
+.cfu-card video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.cfu-description p {
+  font-size: 1rem;
+  color: #d3d3d3;
 }
 
 /* Video Sections */
-.video-section {
-  text-align: center;
-}
-
-video {
+.video-section video {
   width: 80%;
   max-width: 500px;
   border-radius: 10px;
+  border: 3px solid #a56eff;
   margin-bottom: 1rem;
-  border: 3px solid var(--accent-purple);
 }
 
-/* Portfolio Buttons */
-.portfolio-links {
-  text-align: center;
-}
-
-.btn {
-  display: inline-block;
-  background: var(--accent-purple);
-  color: var(--white);
-  padding: 0.8rem 1.5rem;
-  margin: 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background: var(--white);
-  color: var(--deep-purple);
-  transform: scale(1.05);
-}
-
-/* Footer */
 footer {
   text-align: center;
-  background: var(--mid-gray);
-  padding: 1.2rem;
+  background-color: #2a2a2a;
+  padding: 1rem;
   font-size: 0.9rem;
 }
