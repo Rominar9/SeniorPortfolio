@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Professional Gray & Purple Theme */
+/* Fonts & Colors */
 :root {
   --dark-gray: #1e1e1e;
   --mid-gray: #2a2a2a;
@@ -13,16 +13,14 @@
   --white: #ffffff;
   --accent-purple: #a56eff;
   --deep-purple: #4b0082;
-  --font-heading: 'Poppins', sans-serif;
-  --font-body: 'Roboto', sans-serif;
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: 'Poppins', sans-serif;
   background-color: var(--dark-gray);
   color: var(--white);
   line-height: 1.8;
-  font-size: 1.1rem; /* slightly bigger for readability */
+  font-size: 18px;
 }
 
 /* Header */
@@ -41,11 +39,9 @@ header .container {
 }
 
 header h1 {
-  font-family: var(--font-heading);
   font-size: 2rem;
-  color: var(--accent-purple);
+  color: var(--white);
   letter-spacing: 1px;
-  font-weight: bold;
 }
 
 nav ul {
@@ -57,15 +53,12 @@ nav ul {
 nav a {
   color: var(--white);
   text-decoration: none;
-  font-weight: bold;
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  transition: color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: var(--accent-purple);
-  transform: scale(1.05);
 }
 
 /* Hero Section */
@@ -86,14 +79,11 @@ nav a:hover {
 
 #hero h2 {
   font-size: 2.2rem;
-  font-family: var(--font-heading);
-  margin-bottom: 0.5rem;
 }
 
 #hero p {
+  font-size: 1.3rem;
   color: #d3d3d3;
-  font-size: 1.2rem;
-  font-family: var(--font-body);
 }
 
 /* Content Sections */
@@ -111,15 +101,12 @@ nav a:hover {
   border-bottom: 2px solid var(--accent-purple);
   display: inline-block;
   margin-bottom: 1rem;
-  font-family: var(--font-heading);
-  font-size: 2rem;
 }
 
-/* Paragraph Styling */
+/* Paragraphs bigger & readable */
 .content-section p {
   font-size: 1.2rem;
-  font-family: var(--font-body);
-  margin-bottom: 1rem;
+  line-height: 1.8;
 }
 
 /* CFU Navigation */
@@ -135,11 +122,11 @@ nav a:hover {
   background-color: var(--accent-purple);
   color: var(--white);
   border: none;
-  padding: 0.6rem 1.2rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
-  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -149,30 +136,16 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* CFU Sections */
-.cfu-section {
-  background-color: var(--light-gray);
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-}
-
-.cfu-section h3 {
-  color: var(--accent-purple);
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-}
-
 /* Video Sections */
 .video-section {
   text-align: center;
-  margin-bottom: 1.5rem;
 }
 
 video {
-  width: 100%;
-  max-width: 500px; /* smaller, website-friendly size */
+  width: 80%;
+  max-width: 500px;
   border-radius: 10px;
+  margin-bottom: 1rem;
   border: 3px solid var(--accent-purple);
 }
 
@@ -190,7 +163,6 @@ video {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  font-family: var(--font-heading);
   transition: all 0.3s ease;
 }
 
@@ -206,16 +178,4 @@ footer {
   background: var(--mid-gray);
   padding: 1.2rem;
   font-size: 0.9rem;
-}
-
-footer a {
-  color: var(--accent-purple);
-  font-family: var(--font-heading);
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  transform: scale(1.05);
 }
