@@ -159,3 +159,8 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+/* Style for the heart image */
+.bottom-heart {
+    max-width: 100px;
+    height: auto;
+}
